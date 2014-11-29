@@ -26,5 +26,7 @@
     <dimen name="half_vertical">5dp</dimen>
     <dimen name="half_horizontal">6dp</dimen>
     <dimen name="book_image_width">50dp</dimen>
+    <dimen name="large_icon_width">150dp</dimen>
+    <dimen name="book_padding">37dp</dimen>
 
 </resources>

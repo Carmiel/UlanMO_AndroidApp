@@ -67,7 +67,7 @@
             android:src="@drawable/g_icon_map" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:focusableInTouchMode="true"
@@ -78,8 +78,9 @@
             android:paddingTop="@dimen/fragment_vertical_padding" >
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1.0"
                 android:orientation="vertical" >
 
                 <TextView
@@ -87,6 +88,7 @@
                     android:layout_width="@dimen/active_icon_width"
                     android:layout_height="wrap_content"
                     android:drawableTop="@drawable/g_lrain01"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
                     android:text="@string/loading"
                     android:textAlignment="center"
@@ -99,6 +101,7 @@
                     android:id="@+id/rainfall_text"
                     android:layout_width="@dimen/active_icon_width"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
                     android:lines="4"
                     android:maxLines="4"
@@ -112,8 +115,9 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1.0"
                 android:orientation="vertical" >
 
                 <TextView
@@ -121,6 +125,7 @@
                     android:layout_width="@dimen/active_icon_width"
                     android:layout_height="wrap_content"
                     android:drawableTop="@drawable/g_lrain01"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
                     android:text="@string/loading"
                     android:textAlignment="center"
@@ -133,6 +138,7 @@
                     android:id="@+id/accumulation_text"
                     android:layout_width="@dimen/active_icon_width"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
                     android:lines="4"
                     android:maxLines="4"
@@ -155,29 +161,12 @@
             android:orientation="vertical"
             android:visibility="gone" >
 
-            <LinearLayout
+             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/alert_orange"
-                android:paddingBottom="@dimen/fragment_vertical_padding"
-                android:paddingLeft="@dimen/fragment_horizontal_padding"
-                android:paddingRight="@dimen/fragment_horizontal_padding"
-                android:paddingTop="@dimen/fragment_vertical_padding"
-                tools:context=".DisplayActivity" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Past Readings"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/medium_text"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="5dp"
-                android:background="@color/alert_yellow"
+                android:layout_height="2dp"
+                android:layout_marginLeft="@dimen/fragment_horizontal_padding"
+                android:layout_marginRight="@dimen/fragment_horizontal_padding"
+                android:background="#DDDDDD"
                 android:paddingBottom="@dimen/fragment_vertical_padding"
                 android:paddingLeft="@dimen/fragment_horizontal_padding"
                 android:paddingRight="@dimen/fragment_horizontal_padding"

@@ -5,6 +5,7 @@ import ulanmo.main.fragments.RainMeasurementFragment;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -21,11 +22,14 @@ public class DisplayActivity extends DisplayFragmentController {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
-		if (findViewById(R.id.fragment_container2) == null) {
+		
+		Log.d("Display", "Is fragment_container2 null? " + (findViewById(R.id.fragment_container2) == null));
+		
+		if (findViewById(R.id.fragment_container2) != null) {
 			setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
-		} else
+		} else {
 			setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT);
+		}
 
 		setContentView(R.layout.activity_display);
 		MapsInitializer.initialize(getApplicationContext());
