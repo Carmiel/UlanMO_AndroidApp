@@ -16,10 +16,10 @@ public class RainLevelHandlers {
 		{R.drawable.g_srain00, R.drawable.g_srain01, R.drawable.g_sflood02, R.drawable.g_sflood03, R.drawable.g_sflood04, R.drawable.g_sflood05, R.drawable.g_sflood06}
 	};
 	private static String[][] labels = new String[][] {
-		{"Error", "Loading", "No Rainfall", "Light Rainfall", "Heavy Rainfall", "Intense Rainfall", "Catastrophic Rainfall"},
-		{"Error", "Loading", "No Flood Risk", "Slight Flood Risk", "Some Flood Risk", "High Flood Risk", "Inevitable Flooding"},
-		{"Error loading rainfall, please check your internet connection", "...", "It's not raining", "It's drizzling", "It's raining hard, expect flooding in low lying areas", "It's raining extremely hard, expect flooding", "The rain's too much, you might want to evacuate soon"},
-		{"Error loading flood risk, please check your internet connection", "...", "The roads are dry", "The roads are wet, be careful not to slip", "Some flood might be expected", "It might be hard taking your car with this much flood risk", "You might want to evacuate"}
+		{"Error", "Loading", "No Rainfall", "Light Rainfall", "Heavy Rainfall", "Intense Rainfall", "Torrential Rainfall"},
+		{"Error", "Loading", "No Flood Risk", "Slight Flood Risk", "Some Flood Risk", "High Flood Risk", "Extreme Flood Risk"},
+		{"Error: please check your internet connection", "...", "It's not raining", "It's drizzling", "It's raining hard, expect flooding in low lying areas", "It's raining extremely hard, expect flooding", "The rain's too much, you might want to evacuate soon"},
+		{"Error: please check your internet connection", "...", "The roads are dry", "The roads are wet, be careful not to slip", "Some flood might be expected", "It might be hard taking your car with this much flood risk", "You might want to evacuate"}
 	};
 	
 	private static int[] markers = new int[]{
