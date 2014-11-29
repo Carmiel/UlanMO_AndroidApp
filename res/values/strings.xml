@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">UlanMO</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="barangay_hint">Type the barangay to estimate rainfall</string>
+    <string name="loading">Loading</string>
+    <string name="btn_getCurr">Get Rainfall</string>
+    <string name="disclaimer">Disclaimer: The given values above are estimates by considering the measurements from Manila Observatory weather stations near you.</string>
+    <string name="toggle_demo_on">Demo Mode</string>
+    <string name="past_hour">Past Hour</string>
+    <string name="past_day">Past Day</string>
+    <string name="past_5">Past 5 Days</string>
+    <string name="bookmark_key">ulanmo.main.BOOKMARK_KEY</string>
+
+</resources>
